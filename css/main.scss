@@ -1,48 +1,25 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@charset "utf-8";
+/* Text colors */
+$highlight-color: #f87808;
+$lightest-color: #cccccc;
+$light-color: #8a8a8a;
+$normal-color: #4a4a4a;
+$dark-color: #1a1a1a;
 
-$base-font-family: 'Work Sans', sans-serif;
-$base-font-size:   20px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.7;
+/* Background colors */
+$bg-color: #efefef;
+$bg-color-dark-backup: rgb(0,0,0);
+$bg-color-dark: rgba(0,0,0,.75);
 
-$spacing-unit:     30px;
+/* Dimensions */
+$column-width: 600px;
+$column-padding: 30px;
+$column-width-trigger: $column-width + 2*$column-padding;
+$cover-image-height: 240px;
+$cover-image-width: 900px;
+$cover-image-top-padding: 1px;
 
-$text-color:       #333;
-$background-color: #fdfdfd;
-$brand-color:      #60c17d;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "style"
-;
+@import "ezora";

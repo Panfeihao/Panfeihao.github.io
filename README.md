@@ -1,50 +1,40 @@
-# Webjeda Hagura Theme
+# Ezora Theme for Jekyll
 
-[**Demo**](http://webjeda.com/hagura)
+Ezora is a responsive Jekyll theme with a clean single column layout, nifty text overlays for images and a mobile friendly navigation bar.
 
-Hagura is a theme made for blogs with long text paragraphs. Made to be easy on eyes as well with a switchable theme.
+I designed this theme from the ground up for [my own website](http://www.ezrasavard.com) and had some inspiration from the [Flex Jekyll Theme](http://the-development.github.io/flex/) (fonts!) and [Lise Savard's Blog](http://lisesavard.com/).
 
-Suitable fonts are selected for better readability. Since the theme is created for smartphone reading, the theme is very light and it loads instantly even on a slow data connection.
+### [Try Ezora Live!](http://www.ezrasavard.com/ezorademo)
 
-The theme comes with pre-installed analytics, disqus and html compressor. But make sure you change key parameters in the _config.yml file.
+Feel free to use this theme however you like (MIT License).
 
+## Screenshots!
 
-# Installation: 
-Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
+### Desktop
+![screenshot-desktop](https://github.com/ezrasavard/ezora-jekyll-theme/blob/master/screenshot.png)
 
-Watch my video on instlallation
-<iframe width="100%" height="360" src="https://www.youtube.com/embed/T2nx6tj-ZH4?rel=0" frameborder="0" allowfullscreen></iframe>
+### Mobile
+![screenshot-mobile](https://github.com/ezrasavard/ezora-jekyll-theme/blob/master/screenshot-mobile.png)
 
-## How to delete old **gh-pages** branch?
-After forking the repository, click on **branches**.
+## Installation
 
-![delete gh-pages branch](http://blog.webjeda.com/images/delete-github-branch.png)
+To install Ezora, fork this repository and add your sites content =)
 
-Delete ``gh-pages`` branch.
-![delete gh-pages branch](http://blog.webjeda.com/images/delete-github-branch-2.png)
+_I am no longer supporting Ruby Gem based install, since the process is far too rough around the edges at present._
 
-You have to create a new ``gh-pages`` branch using the master branch. Go back to the forked repository and create ``gh-pages`` branch.
+## Usage
 
-![create gh-pages branch](http://blog.webjeda.com/images/create-gh-pages-branch.JPG)
+Ezora uses a fairly minimal set of layouts and sass, and will automatically conform to a sensible layout based on the YAML provided, unless a layout is specified. Width/height values are all defined in the top of main.scss as variables, so you don't have to hunt too far through the SCSS to tweak things.
 
-Now, go to settings and check the **Github Pages** section. You should see a URL where the blog is hosted.
+The **default** layout handles the home page and any other pages while the **post** layout extends the default slightly to include a date-stamp at the top of the page.
 
-This process will host the theme as a **Project Page**. You can also download the files for local development. 
+Notable _includes are the shiny and responsive **topbar**, included in the default layout, the **navbar** and the **postlist**, which is a paginated pile of posts you can include in any page, like the default home page does. You can specify your navigation menu links in **navbar** if you don't like it generating them for all your pages, GitHub and LinkedIn accounts. You can also add more social accounts if you like by extending the list in navbar.html.
 
-Default theme will look like this
+## Contributing
 
-![webjeda gatok jekyll theme](http://webjeda.com/hagura/images/hagura-1.png)
+Bug reports and pull requests are welcome on GitHub at https://github.com/ezrasavard/ezora-jekyll-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
+## License
 
-This theme is responsive.
+The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-![webjeda gatok responsive jekyll theme](http://webjeda.com/hagura/images/hagura-responsive.png)
-
-
-
-# Development
-Make changes to the **master** branch and create a pull request. Do not use **gh-pages** branch as it is used to host the theme.
-
-
-# License
-Read LICENSE file

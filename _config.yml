@@ -1,41 +1,48 @@
-### your site title here
+title: Ezora Theme!
+email: git@ezrasavard.com
+greeting: Welcome to the Ezora Sample Site
+description: > # this means to ignore newlines until another tag
+    Ezora is a responsive Jekyll theme with a clean single column layout, nifty text overlays for images and a mobile friendly navigation bar.
+github:  ezrasavard
+linkedin: ezrasavard
+favicon: favicon.png
 
-title: Hagura - Light!
-baseurl: /hagura # name of the repository
-email: your@email.com
-
-
-
-highlighter: rouge
+# Build settings
+paginate: 3
+baseurl: "/ezorademo" # the subpath of your site, e.g. /blog/
+#baseurl: ""
+url: "http://www.ezrasavard.com" # the base hostname & protocol for your site
+highlights: pygments
+permalink: posts/:title/
+include: ["_pages"]
+gems: [jekyll-paginate]
 markdown: kramdown
-### exclude the instructions / write-up in the README.md
-
-
-# Tracker
-analytics: UA-83979019-1
-
-# Comments
-disqus-shortname: webjeda-demo
-
-
-#optimization
-#compress.html
-compress_html:
-  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: []
-  
-
+excerpt_separator: "<!--more-->"
 sass:
- style: compressed
+    sass_dir: _sass
+    style: compressed
 
-exclude:
-- README.md
-
-
-gems: [jekyll-seo-tag, jekyll-paginate]
+# cover images are expected to be 900px by 240px, or at least 15:4 aspect ratio
+# thumbnails look best with 3:1 or 5:2 ratios in this layout.
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            layout: "default"
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            author: "Ezra Savard"
+            cover: "/media/header.jpg"
+            layout: "post"
+    -
+        scope:
+            path: ""
+            type: "pages"
+        values:
+            author: "Ezra Savard"
+            cover: "/media/header.jpg"
+            layout: "default"
