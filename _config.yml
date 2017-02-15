@@ -11,7 +11,7 @@ favicon: favicon.png
 paginate: 3
 baseurl: "/ezorademo" # the subpath of your site, e.g. /blog/
 #baseurl: ""
-url: "http://www.ezrasavard.com" # the base hostname & protocol for your site
+url: "http://panfeihao.github.io" # the base hostname & protocol for your site
 highlights: pygments
 permalink: posts/:title/
 include: ["_pages"]
@@ -19,6 +19,7 @@ gems: [jekyll-paginate]
 markdown: kramdown
 excerpt_separator: "<!--more-->"
 sass:
+<<<<<<< HEAD
     sass_dir: _sass
     style: compressed
 
@@ -46,3 +47,14 @@ defaults:
             author: "Ezra Savard"
             cover: "/media/header.jpg"
             layout: "default"
+=======
+ style: compressed
+
+exclude:
+- README.md
+
+
+gems: [jekyll-seo-tag, jekyll-paginate]
+
+theme: jekyll-theme-minimal
+>>>>>>> origin/master
