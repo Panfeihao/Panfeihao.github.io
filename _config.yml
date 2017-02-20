@@ -7,12 +7,12 @@
 
 # Site settings
 title: Gravity
-email: hemangsk@gmail.com
-description: The Liberal Jekyll Theme
+email: panfeihao@gmail.com
+description: My blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://panfeihao.github.io" # the base hostname & protocol for your site
-twitter_username: hemang_kumar
-github_username:  hemangsk
+twitter_username: panfeihao
+github_username:  panfeihao
 paginate: 5
 
 gems: [jekyll-paginate, kramdown]
