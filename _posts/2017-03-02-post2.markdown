@@ -6,9 +6,9 @@ categories: jekyll update
 
 ---
 
-##读书
+<h1> <center>读书<center/> <h1/>
 
-####［宋］陆九渊
+<center>［宋］陆九渊 <center/>
 
 读书切戒在慌忙，涵泳工夫兴味长。
 未晓不妨权放过，切身须要急思量。
