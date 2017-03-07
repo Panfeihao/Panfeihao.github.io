@@ -11,8 +11,8 @@ categories: jekyll update
 <h5 style="text-align:center">［宋］陆九渊</h5>
 
 <p style="text-align:center">
-<br>读书切戒在慌忙，</br>
-<br>涵泳工夫兴味长。</br>
-<br>未晓不妨权放过，</br>
-<br>切身须要急思量。</br>
+<br>读书切戒在慌忙，
+<br>涵泳工夫兴味长。
+<br>未晓不妨权放过，
+<br>切身须要急思量。
 </p>
