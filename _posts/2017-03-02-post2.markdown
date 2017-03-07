@@ -6,7 +6,7 @@ categories: jekyll update
 
 ---
 
-<h1> <center>读书<center/> </h1>
+<h1 style="text-align:center">读书</h1>
 
 <h5><center>［宋］陆九渊 </center></h5>
 
